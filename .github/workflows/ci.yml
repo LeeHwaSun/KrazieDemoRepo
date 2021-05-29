@@ -27,7 +27,7 @@ jobs:
     #  run: ./gradlew build
 
     - name: executing remote ssh commands using ssh key
-      uses: actions/KrazieDemoRepo@master
+      uses: actions/checkout@v2
       with:
         host: ${{ secrets.SECRET_IP }}
         username: ${{ secrets.SECRET_ID }}
